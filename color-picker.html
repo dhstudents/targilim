@@ -43,10 +43,22 @@
             margin: 25px;
         }
         #right > div {
+            position: relative;
             box-sizing: border-box;
-            width: 100px;
+            width: 140px;
             height: 100px;
         }
+
+        #right > div > span {
+            position: absolute;
+            top : 25%;
+            left: 20px;
+
+visibility: hidden;;
+
+        }
+
+
 
         #right {
             height: 400px;
@@ -94,7 +106,7 @@
             let selectedColor = e.target.style.backgroundColor;
             let colorItem = document.createElement('div');
             colorItem.style.backgroundColor = selectedColor;
-            colorItem.textContent = selectedColor;
+            colorItem.innerHTML = `<span>${selectedColor}</span>` ;
             document.getElementById('right').appendChild(colorItem);
         }
 
