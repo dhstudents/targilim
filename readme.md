@@ -4,7 +4,8 @@
 2. **git add .** - move to staging [INDEX]
 3. **git commit** -m "first commit"
 4. **create repo in github**
-5. 
+5. git remote add origin https://github.com/dhstudents/targilim.git
+6. git push -u origin master
 
 
 
